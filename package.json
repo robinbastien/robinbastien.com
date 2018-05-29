@@ -1,0 +1,30 @@
+{
+  "name": "robinbastien.com",
+  "version": "1.0.0",
+  "description": "Personal Website for Robin Bastien",
+  "main": "_webpack/entry.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robinbastien/robinbastien.com.git"
+  },
+  "keywords": [
+    "website",
+    "developer",
+    "jekyll",
+    "github-pages"
+  ],
+  "authors": [
+    {
+      "name": "Robin Bastien",
+      "email": "info@robinbastien.com"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/robinbastien/robinbastien.com/issues"
+  },
+  "homepage": "https://github.com/robinbastien/robinbastien.com#readme"
+}
