@@ -32,4 +32,33 @@
 body,
 .sans-serif {
   font-family: $font-stack;
+  font-size: 1.2rem;
+  line-height: 1.5;
 }
+
+h2,
+.subheading {
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+@each $breakpoint in $breakpoints {
+  $name: nth($breakpoint, 1);
+  $size: nth($breakpoint, 2);
+  $font-size: nth($breakpoint, 4);
+
+  @media only screen and (min-width: $size) {
+
+    body,
+    .sans-serif {
+      font-size: $font-size;
+    }
+
+    h2,
+    .subheading {
+      font-size: $font-size*1.2;
+    }
+
+  }
+
+} // each

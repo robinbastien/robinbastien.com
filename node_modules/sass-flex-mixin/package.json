@@ -1,0 +1,90 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "sass-flex-mixin@^1.0.3",
+        "scope": null,
+        "escapedName": "sass-flex-mixin",
+        "name": "sass-flex-mixin",
+        "rawSpec": "^1.0.3",
+        "spec": ">=1.0.3 <2.0.0",
+        "type": "range"
+      },
+      "/Users/robinbastien/Sites/robinbastien.com/node_modules/flexboxgrid-sass"
+    ]
+  ],
+  "_from": "sass-flex-mixin@>=1.0.3 <2.0.0",
+  "_id": "sass-flex-mixin@1.0.3",
+  "_inCache": true,
+  "_location": "/sass-flex-mixin",
+  "_nodeVersion": "6.0.0",
+  "_npmOperationalInternal": {
+    "host": "packages-16-east.internal.npmjs.com",
+    "tmp": "tmp/sass-flex-mixin-1.0.3.tgz_1463069407374_0.9052123052533716"
+  },
+  "_npmUser": {
+    "name": "mastastealth",
+    "email": "hi@brianfran.co"
+  },
+  "_npmVersion": "3.5.2",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "sass-flex-mixin@^1.0.3",
+    "scope": null,
+    "escapedName": "sass-flex-mixin",
+    "name": "sass-flex-mixin",
+    "rawSpec": "^1.0.3",
+    "spec": ">=1.0.3 <2.0.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/flexboxgrid-sass"
+  ],
+  "_resolved": "https://registry.npmjs.org/sass-flex-mixin/-/sass-flex-mixin-1.0.3.tgz",
+  "_shasum": "a504d62062f7b0e773aebc395de1f45aaa6e4fd0",
+  "_shrinkwrap": null,
+  "_spec": "sass-flex-mixin@^1.0.3",
+  "_where": "/Users/robinbastien/Sites/robinbastien.com/node_modules/flexboxgrid-sass",
+  "author": {
+    "name": "Brian Franco",
+    "email": "hi@brianfran.co",
+    "url": "http://brianfran.co/"
+  },
+  "bugs": {
+    "url": "https://github.com/mastastealth/sass-flex-mixin/issues"
+  },
+  "dependencies": {},
+  "description": "Set of mixins for cross-browser compatible flexbox",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "a504d62062f7b0e773aebc395de1f45aaa6e4fd0",
+    "tarball": "https://registry.npmjs.org/sass-flex-mixin/-/sass-flex-mixin-1.0.3.tgz"
+  },
+  "gitHead": "a4d4b5daf6eb6260878acef65ac32824f2a14bb0",
+  "homepage": "https://github.com/mastastealth/sass-flex-mixin",
+  "keywords": [
+    "sass",
+    "css",
+    "flexbox",
+    "mixin"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "maintainers": [
+    {
+      "name": "mastastealth",
+      "email": "hi@brianfran.co"
+    }
+  ],
+  "name": "sass-flex-mixin",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mastastealth/sass-flex-mixin.git"
+  },
+  "sass": "_flex.scss",
+  "scripts": {},
+  "version": "1.0.3"
+}

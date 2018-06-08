@@ -3,4 +3,10 @@ $colors: (
   secondary: #2B303B
 );
 
-$font-stack: Proxima Nova, Helvetica, sans-serif;
+
+$breakpoints:
+  sm 48em 46rem 1rem,
+  md 62em 61rem 1.2rem,
+  lg 75em 71rem 1.4rem;
+
+$font-stack: 'proxima-nova', Helvetica, sans-serif;
