@@ -26,5 +26,8 @@
   "bugs": {
     "url": "https://github.com/robinbastien/robinbastien.com/issues"
   },
-  "homepage": "https://github.com/robinbastien/robinbastien.com#readme"
+  "homepage": "https://github.com/robinbastien/robinbastien.com#readme",
+  "dependencies": {
+    "flexboxgrid-sass": "^8.0.5"
+  }
 }

@@ -1,0 +1,27 @@
+.align--left {
+  text-align: left;
+}
+
+.align--right {
+  text-align: right;
+}
+
+.align--center {
+  text-align: center;
+}
+
+.screen-height {
+  height: 100vh;
+}
+
+.padded {
+  padding: 1rem;
+}
+
+.hidden {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+  font-size: 0;
+  overflow: hidden;
+}

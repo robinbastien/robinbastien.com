@@ -1,0 +1,22 @@
+/**
+ * Section:    Hero Unit
+ * @author     Robin Bastien
+ * @copyright  MIT
+ */
+
+.hero-unit {
+  min-height: 100vh;
+  @include linear-gradient(to top right, #D0D2D4 0%, #C8CBCE 49.99%, #D0D2D4 50%, #E0E0E0 100%);
+}
+
+.hero-unit-- {
+
+  &tagline {
+    animation: fadeIn 0.8s opacity ease-out;
+  }
+
+  &subheading {
+    margin-top: 0;
+  }
+
+}
