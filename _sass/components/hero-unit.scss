@@ -13,10 +13,14 @@
 
   &tagline {
     animation: fadeIn 0.8s opacity ease-out;
+    animation-delay: 0.75s;
   }
 
   &subheading {
     margin-top: 0;
   }
 
+  &descriptor {
+    animation-delay: 2s;
+  }
 }
