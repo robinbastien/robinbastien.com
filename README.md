@@ -1,3 +1,15 @@
 # Personal Website for Robin Bastien
 
-Hi, welcome to my website!
+## Tools Used
+- Jekyll (Github Pages)
+- SASS
+- CSS Flexbox-Grid
+
+## Running
+```bash
+jekyll serve --watch
+```
+
+
+## Preview
+![Preview of homepage](assets/images/preview.png)
