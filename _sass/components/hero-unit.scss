@@ -24,3 +24,16 @@
     animation-delay: 2s;
   }
 }
+
+#path-1 {
+  animation: slideDown 2s forwards ease-out;
+  animation-delay: 1s;
+  transform: translateY(-18rem);
+  will-change: transform;
+  backface-visibility: hidden;
+
+}
+#hero-unit-mask,
+#mask-2 {
+  mask-type: luminance;
+}

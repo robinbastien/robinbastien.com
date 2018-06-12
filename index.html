@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="https://use.typekit.net/nfp0oso.css">
     <link rel="stylesheet" href="assets/style.css">
     <link type="application/atom+xml" rel="alternate" href="http://robinbastien.com/feed.xml" title="Robin Bastien - Web Developer" />
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
   </head>
 <body id="top">
 
@@ -68,7 +68,7 @@
 
         <div class="row center-xs middle-xs screen-height">
           <div class="col-xs-10 col-lg-6">
-            <img class="hero-unit--tagline animation animation--fadeInDown" src="assets/images/tagline.svg" alt="Hi, I'm Robin" width="900">
+            <svg id="hero-unit__typography" viewBox="0 0 604 98"></svg>
 
             <h1 class="hidden">Robin Bastien, Front-End Integrator</h1>
 
@@ -86,6 +86,7 @@
 
     </section><!--.hero-unit-->
     <section class="text-image">
+      <div class="container-fluid unpadded">
         <div class="row row--reverse-md middle-md">
           <div class="text-image--photo col-xs-12 col-md-6">
             <img src="assets/images/avatar-sitting.jpg" class="image--cover" alt="Just looking around">
@@ -97,18 +98,19 @@
             </div>
           </div>
         </div>
-      </section>
-      <section class="chart">
-        <div class="container-fluid">
-          <div class="row center-xs">
-            <div class="col-xs-10 col-md-6 align--middle">
-              <h2>Skills</h2>
-              <p>Coming Soon</p>
-            </div>
+      </div>
+    </section>
+    <section class="chart">
+      <div class="container-fluid">
+        <div class="row center-xs">
+          <div class="col-xs-10 col-md-6 align--middle">
+            <h2>Skills</h2>
+            <p>Coming Soon</p>
           </div>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
+  </main>
     <!--
     <footer class="site-footer h-card">
       <div class="wrapper">
@@ -130,6 +132,8 @@
       </div>
 
   </footer>-->
+  <script src="assets/js/snap.svg-min.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 
 </html>
