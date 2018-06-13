@@ -6,7 +6,7 @@
 
 .hero-unit {
   min-height: 100vh;
-  @include linear-gradient(to top right, #D0D2D4 0%, #C8CBCE 49.99%, #D0D2D4 50%, #E0E0E0 100%);
+  @include radial-gradient(#1D2133, #141623);
 }
 
 .hero-unit-- {
@@ -18,6 +18,8 @@
 
   &subheading {
     margin-top: 0;
+    color: white;
+    font-weight: 300;
   }
 
   &descriptor {

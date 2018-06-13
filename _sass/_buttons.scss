@@ -25,6 +25,10 @@ button,
     border-color: map-get($colors, primary);
     color: map-get($colors, primary);
   }
+  &white {
+    border-color: white;
+    color: white;
+  }
   &large {
     font-size: 1.4rem;
     padding: 1rem 2rem;
