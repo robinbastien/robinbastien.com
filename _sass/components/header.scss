@@ -4,10 +4,104 @@
   left: 0;
   width: 100%;
   animation-delay: 2s;
-}
+  color: white;
+  
 
-.site-nav__container {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
+  // Descendents
+  &__ {
+    
+    // Nav Descendents
+    &nav {
+      width: 20rem;
+      max-width: 100vw;
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      right: 0;
+
+      &:before {
+        display: block;
+        content: "";
+        position: absolute;
+        opacity: 0;
+        overflow: hidden;
+        width: 0;
+        height: 0;
+        right: 0;
+        top: 0;
+        transition: 0.5s all ease-out;
+        background-color: white;
+        z-index: 1;
+      }
+
+      // State Modifiers
+      &--is-active {
+
+        &:before {
+          opacity: 1;
+          width: 100%;
+          height: 100%;
+          @extend %box-shadow;
+        }
+
+        & .site-header__nav__hamburger {
+            color: map-get($colors, primary);
+          }
+        
+      } // State modifiers
+
+      // Descendents
+      &__ {
+        
+        &container {
+          list-style-type: none;
+          margin: 0;
+          padding: 0.75rem;
+          width: 0;
+          height: 0;
+          overflow: hidden;
+          opacity: 0;
+          position: relative;
+          z-index: 10;
+          will-change: transition;
+          transition: 0.5s opacity ease-out 0.4s;
+
+          &--is-active {
+            width: 100%;
+            height: 100%;
+            overflow: visible;
+            opacity: 1;
+            
+          }
+        }
+
+        &hamburger {
+          font-size: 3rem;
+          color: white;
+          transition: 0.4s color ease-out;
+          position: relative;
+          z-index: 11;
+        }
+
+        &link,
+        &link:visited,
+        &link:focus {
+          color: map-get($colors, tertiary);
+
+          @media screen and (min-width: $break-large) {
+            color: white;
+          }
+        }
+
+        &link:hover {
+          color: map-get($colors, tertiary);
+          @media screen and (min-width: $break-large) {
+            text-decoration: underline;
+          }
+        }
+
+      } // Nav Descendents
+  } // Nav
+
+  } // Header Descendents
+} // .site-headerˇ

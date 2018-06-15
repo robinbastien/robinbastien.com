@@ -6,7 +6,20 @@
 
 .hero-unit {
   min-height: 100vh;
+  color: white;
   @include radial-gradient(#1D2133, #141623);
+}
+
+.hero-unit a,
+.hero-unit a:link,
+.hero-unit a:visited {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s color linear;
+}
+
+.hero-unit a:hover {
+  color: #8290BB;
 }
 
 .hero-unit-- {
@@ -25,6 +38,7 @@
   &descriptor {
     animation-delay: 2s;
   }
+
 }
 
 #path-1 {

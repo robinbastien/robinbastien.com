@@ -1,3 +1,4 @@
+// Font Face Declarations
 @font-face {
   font-family: "Proxima Nova";
   font-weight: normal;
@@ -29,6 +30,18 @@
   src: url("fonts/ProximaNova-Light.otf") format("otf");
 }
 
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icons/icomoon.eot?u2ghr8');
+  src:  url('fonts/icons/icomoon.eot?u2ghr8#iefix') format('embedded-opentype'),
+    url('fonts/icons/icomoon.ttf?u2ghr8') format('truetype'),
+    url('fonts/icons/icomoon.woff?u2ghr8') format('woff'),
+    url('fonts/icons/icomoon.svg?u2ghr8#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// Base Type Styling
 body,
 .sans-serif {
   font-family: $font-stack;
@@ -40,6 +53,26 @@ h2,
 .subheading {
   font-weight: 300;
   font-size: 1rem;
+}
+
+%a {
+  color: map-get($colors, secondary);
+  text-decoration: none;
+  transition: 0.3s color linear;
+}
+
+a  {
+  @extend %a;
+  
+  &:visited,
+  &:focus,
+  &:active {
+    @extend %a;
+  }
+
+  :hover {
+    color: map-get($colors, tertiary);
+  }
 }
 
 @each $breakpoint in $breakpoints {

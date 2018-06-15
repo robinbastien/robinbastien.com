@@ -48,6 +48,17 @@
     .row--reverse-#{$name} {
         flex-direction: row-reverse;
     }
+    .align--left--#{$name} {
+      text-align: left;
+    }
+    
+    .align--right--#{$name} {
+      text-align: right;
+    }
+    
+    .align--center--#{$name} {
+      text-align: center;
+    }
   }
 
 }

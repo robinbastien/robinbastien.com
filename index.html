@@ -19,120 +19,100 @@
     <link rel="stylesheet" href="https://use.typekit.net/nfp0oso.css">
     <link rel="stylesheet" href="assets/style.css">
     <link type="application/atom+xml" rel="alternate" href="http://robinbastien.com/feed.xml" title="Robin Bastien - Web Developer" />
-
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   </head>
 <body id="top">
-
-  <header class="site-header animation animation--fadeIn" role="banner">
-    <div class="container-fluid padded">
-
-      <div class="row center-xs middle-xs">
-        <div class="col-xs-6 col-md-3 col-lg-1 align--left">
-          <a href="#top">
-            <img src="/assets/images/logo-pattern.svg" class="site-header--logo" alt="Logo for Robin Bastien" width="60">
-          </a>
+  <div id="app">
+    <header class="site-header animation animation--fadeIn" role="banner">
+      <div class="container-fluid padded">
+        <div class="row center-xs middle-xs">
+          <div class="col-xs-6 col-md-3 col-lg-1 align--left">
+            <a href="#top">
+              <img src="/assets/images/logo-pattern.svg" class="site-header--logo" alt="Logo for Robin Bastien" width="60">
+            </a>
+          </div>
+          <div id="nav" class="col-xs-6 col-md-9 col-lg-11 align--right">
+            <nav class="site-header__nav" v-on:click="toggleNavState()" v-bind:class="{ 'site-header__nav--is-active': isOpen }">
+              <button class="button button--icon button--muted site-header__nav__hamburger icon icon--navicon"></button>
+              <ul class="site-header__nav__container align--center align--right--lg" v-on:click="toggleNavState()" v-bind:class="{ 'site-header__nav__container--is-active': isOpen }">
+                <li class="site-header__nav__item">
+                  <a class="site-header__nav__link" href="#about">About</a>
+                </li>
+                <li class="site-header__nav__item">
+                  <a class="site-header__nav__link" href="#skills">Skills</a>
+                </li>
+                <li class="site-header__nav__item">
+                  <a class="site-header__nav__link" href="#work">Work</a>
+                </li>
+                <li class="site-header__nav__item">
+                  <a class="site-header__nav__link" href="#contact">Contact</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
         </div>
-        <div class="col-xs-6 col-md-9 col-lg-11 align--right">
-          <nav class="site-nav">
 
-            <ul class="site-nav__container">
-              <li class="site-nav__item">
-                <a class="page-link button button--primary" target="_blank" href="https://www.linkedin.com/in/robinbastien/">Coming Soon!</a>
-              </li>
-              <!--<li class="site-nav__item">
-                <a class="page-link" href="#about">About</a>
-              </li>
-              <li class="site-nav__item">
-                <a class="page-link" href="#about">Skills</a>
-              </li>
-              <li class="site-nav__item">
-                <a class="page-link" href="#work">Work</a>
-              </li>
-              <li class="site-nav__item">
-                <a class="page-link" href="#contact">contact</a>
-              </li>-->
-            </ul>
 
-          </nav>
-        </div>
       </div>
+    </header>
 
+    <main class="page-content" aria-label="Content">
 
-    </div>
-  </header>
+      <section class="hero-unit">
+        <div class="wrapper center-xs middle-xs">
 
-  <main class="page-content" aria-label="Content">
+          <div class="row center-xs middle-xs screen-height">
+            <div class="col-xs-10 col-md-8 col-lg-8">
 
-    <section class="hero-unit">
-      <div class="wrapper center-xs middle-xs">
+              <svg id="hero-unit__typography" viewBox="0 0 722 106"></svg>
 
-        <div class="row center-xs middle-xs screen-height">
-          <div class="col-xs-10 col-md-8 col-lg-8">
+              <h1 class="hidden">Robin Bastien, Front-End Integrator</h1>
 
-            <svg id="hero-unit__typography" viewBox="0 0 722 106"></svg>
+              <div class="hero-unit--descriptor animation animation--fadeIn">
+                <h2 class="hero-unit--subheading">I build websites & apps</h2>
 
-            <h1 class="hidden">Robin Bastien, Front-End Integrator</h1>
+                <p><span class="icon icon--scroll">
+                  <span class="icon--scroll__mouse">
+                    <span class="animation animation--mouse">
+                    </span>
+                  </span>
+                </span></p>
+              </div>
 
-            <div class="hero-unit--descriptor animation animation--fadeIn">
-              <h2 class="hero-unit--subheading">I build websites & apps</h2>
-
-              <p><a class="button button--large button--white" href="https://www.linkedin.com/in/robinbastien/">Learn More</a></p>
             </div>
 
-          </div>
 
+          </div><!--.row-->
+        </div>
 
-        </div><!--.row-->
-      </div>
-
-    </section><!--.hero-unit-->
-    <section class="text-image">
-      <div class="container-fluid unpadded">
-        <div class="row row--reverse-md middle-md">
-          <div class="text-image--photo col-xs-12 col-md-6">
-            <img src="assets/images/avatar-sitting.jpg" class="image--cover" alt="Just looking around">
-          </div>
-          <div class="col-xs-12 col-md-6">
-            <div class="text-image--content">
-              <h2>About Me</h2>
-              <p>I'm currently on the path to become a full-stack developer — using tools such as Laravel, node, and Vue.JS to power my applications.</p>
+      </section><!--.hero-unit-->
+      <section class="text-image">
+        <div class="container-fluid unpadded">
+          <div class="row row--reverse-md middle-md">
+            <div class="text-image--photo col-xs-12 col-md-6">
+              <img src="assets/images/avatar-sitting.jpg" class="image--cover" alt="Just looking around">
+            </div>
+            <div class="col-xs-12 col-md-6">
+              <div class="text-image--content">
+                <h2>About Me</h2>
+                <p>I'm currently on the path to become a full-stack developer — using tools such as Laravel, node, and Vue.JS to power my applications.</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="chart">
-      <div class="container-fluid">
-        <div class="row center-xs">
-          <div class="col-xs-10 col-md-6 align--middle">
-            <h2>Skills</h2>
-            <p>Coming Soon</p>
+      </section>
+      <section class="chart">
+        <div class="container-fluid">
+          <div class="row center-xs">
+            <div class="col-xs-10 col-md-6 align--middle">
+              <h2>Skills</h2>
+              <p>Coming Soon</p>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-  </main>
-    <!--
-    <footer class="site-footer h-card">
-      <div class="wrapper">
-
-        <div class="footer-col-wrapper">
-          <div class="footer-col footer-col-1">
-            <ul class="contact-list">
-              <li class="p-name">Robin Bastien - Web Developer</li><li><a class="u-email" href="mailto:info@robinbastien.com">info@robinbastien.com</a></li></ul>
-          </div>
-
-          <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/robinbastien"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">robinbastien</span></a></li><li><a href="https://www.twitter.com/robinbastien"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">robinbastien</span></a></li></ul>
-          </div>
-
-          <div class="footer-col footer-col-3">
-            <p>Hi! I&#39;m a front-end integrator, JS, and PHP Developer from Ottawa</p>
-          </div>
-        </div>
-
-      </div>
-
-  </footer>-->
+      </section>
+    </main>
+  </div><!--#app-->
   <script src="assets/js/snap.svg-min.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
