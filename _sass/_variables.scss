@@ -1,5 +1,5 @@
 $colors: (
-  primary: #8290BB,
+  primary: #405A7B,
   secondary: #2B303B,
   tertiary: #45678E
 );
@@ -16,3 +16,5 @@ $font-stack: 'proxima-nova', Helvetica, sans-serif;
 %box-shadow {
   box-shadow: 1px 4px 8px rgba(0,0,0,0.4);
 }
+
+$easeOutSmooth: cubic-bezier(0.130, 0.330, 0.075, 0.985);

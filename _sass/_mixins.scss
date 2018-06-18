@@ -13,7 +13,7 @@
 
 @mixin radial-gradient($innerColor: #555, $outerColor: #333)  {
   background-color: $outerColor;
-  background-image: -webkit-gradient(radial, center center, 0, center center, 460, from($innerColor), to($outerColor));
+  background-image: -webkit-gradient(radial, center center, 0, center center, 900, from($innerColor), to($outerColor));
   background-image: -webkit-radial-gradient(circle, $innerColor, $outerColor);
   background-image: -moz-radial-gradient(circle, $innerColor, $outerColor);
   background-image: -o-radial-gradient(circle, $innerColor, $outerColor);

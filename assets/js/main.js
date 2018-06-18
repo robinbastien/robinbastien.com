@@ -26,13 +26,14 @@ function animateTagline(data) {
   outerBlobs.forEach((element) => {
     const myMatrix = new Snap.Matrix();
     const timeout = 6500;
+    const distance = 30;
     let direction = 1;
-    myMatrix.translate(getRandomInt(20), getRandomInt(20));
+    myMatrix.translate(getRandomInt(distance), getRandomInt(distance));
     delay = delay + 100;
     const toSimple = () => {
       direction = direction * -1;
       element.animate({ transform: myMatrix }, timeout, mina.linear, toSimple);
-      myMatrix.translate(getRandomInt(20) * direction, getRandomInt(20) * direction);
+      myMatrix.translate(getRandomInt(distance) * direction, getRandomInt(distance) * direction);
     };
     setTimeout(() => {
       toSimple();

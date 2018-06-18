@@ -14,7 +14,7 @@
                         <mask id="mask-2" fill="white">
                             <use xlink:href="#path-1"></use>
                         </mask>
-                        <use id="Letter-Outline" fill="#3D475C" xlink:href="#path-1"></use>
+                        <use id="Letter-Outline" fill="#405A7B" xlink:href="#path-1"></use>
                     </g>
                 </g>
             </g>

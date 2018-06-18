@@ -53,6 +53,7 @@ h2,
 .subheading {
   font-weight: 300;
   font-size: 1rem;
+  color: map-get($colors, primary);
 }
 
 %a {
