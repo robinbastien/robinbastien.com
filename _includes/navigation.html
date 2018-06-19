@@ -1,0 +1,17 @@
+<nav class="site-header__nav" v-on:click="toggleNavState()" v-bind:class="{ 'site-header__nav--is-active': isOpen }">
+<button class="button button--icon button--muted site-header__nav__hamburger icon icon--navicon"></button>
+<ul class="site-header__nav__container align--center align--right--lg" v-on:click="toggleNavState()" v-bind:class="{ 'site-header__nav__container--is-active': isOpen }">
+    <li class="site-header__nav__item">
+    <a class="site-header__nav__link" href="#about">About</a>
+    </li>
+    <!-- <li class="site-header__nav__item">
+    <a class="site-header__nav__link" href="#skills">Skills</a>
+    </li>
+    <li class="site-header__nav__item">
+    <a class="site-header__nav__link" href="#work">Work</a>
+    </li>-->
+    <li class="site-header__nav__item">
+    <a class="site-header__nav__link" href="mailto:info@robinbastien.com">Contact</a>
+    </li>
+</ul>
+</nav>

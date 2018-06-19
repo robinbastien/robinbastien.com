@@ -1,27 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.5.0 -->
-    <title>Robin Bastien - Web Developer | Hi! I’m a front-end integrator, JS, and PHP Developer from Ottawa</title>
-    <meta name="generator" content="Jekyll v3.8.2" />
-    <meta property="og:title" content="Robin Bastien - Web Developer" />
-    <meta property="og:locale" content="en_US" />
-    <meta name="description" content="Hi! I’m a front-end integrator, JS, and PHP Developer from Ottawa" />
-    <meta property="og:description" content="Hi! I’m a front-end integrator, JS, and PHP Developer from Ottawa" />
-    <link rel="canonical" href="https://www.robinbastien.com/" />
-    <meta property="og:url" content="https://www.robinbastien.com/" />
-    <meta property="og:site_name" content="Robin Bastien - Web Developer" />
-    <script type="application/ld+json">
-    {"headline":"Robin Bastien - Web Developer","description":"Hi! I’m a front-end integrator, JS, and PHP Developer from Ottawa","@type":"WebSite","name":"Robin Bastien - Web Developer","url":"https://www.robinbastien.com/","@context":"http://schema.org"}</script>
-    <!-- End Jekyll SEO tag -->
-    <link rel="stylesheet" href="https://use.typekit.net/nfp0oso.css">
-    <link rel="stylesheet" href="assets/style.css">
-    <link type="application/atom+xml" rel="alternate" href="http://robinbastien.com/feed.xml" title="Robin Bastien - Web Developer" />
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-  </head>
-<body id="top">
+
   <div id="app">
     <header class="site-header animation animation--fadeIn" role="banner">
       <div class="container-fluid padded">
@@ -38,14 +15,14 @@
                 <li class="site-header__nav__item">
                   <a class="site-header__nav__link" href="#about">About</a>
                 </li>
-                <li class="site-header__nav__item">
+               <!-- <li class="site-header__nav__item">
                   <a class="site-header__nav__link" href="#skills">Skills</a>
                 </li>
                 <li class="site-header__nav__item">
                   <a class="site-header__nav__link" href="#work">Work</a>
-                </li>
+                </li>-->
                 <li class="site-header__nav__item">
-                  <a class="site-header__nav__link" href="#contact">Contact</a>
+                  <a class="site-header__nav__link" href="mailto:info@robinbastien.com">Contact</a>
                 </li>
               </ul>
             </nav>
@@ -103,7 +80,7 @@
    
 
       </section><!--.hero-unit-->
-      <section class="text-image">
+      <section class="text-image" id="about">
         <div class="container-fluid unpadded">
           <div class="row row--reverse-md middle-md">
             <div class="text-image--photo col-xs-12 col-md-6">
@@ -118,16 +95,13 @@
           </div>
         </div>
       </section>
-      <section class="chart">
-        <div class="container-fluid">
-          <div class="row center-xs">
-            <div class="col-xs-10 col-md-6 align--middle">
-              <h2>Skills</h2>
-              <p>Coming Soon</p>
-            </div>
+      <footer class="site-footer">
+          <div class="row middle-md">
+              <div class="col-xs-12 col-md-6">
+                  {{ page.date | date: '%B %d, %Y' }} Robin Bastien
+              </div>
           </div>
-        </div>
-      </section>
+      </footer>
     </main>
   </div><!--#app-->
   <script src="assets/js/snap.svg-min.js"></script>
