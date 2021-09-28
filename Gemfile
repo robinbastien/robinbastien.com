@@ -30,3 +30,8 @@ gem "wdm", "~> 0.1.0" if Gem.win_platform?
 
 # We need SCSS building
 gem 'jekyll-sass-converter'
+
+
+# Fix Vulnerabilities
+gem "addressable", ">= 2.8.0"
+gem "kramdown", ">= 2.3.1"
